@@ -63,40 +63,38 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/template.css">
-	
-    <title>Accueil - menu de navigation</title>
-	<link rel="stylesheet"  href="css/accueil22.css" />
-    <link rel="stylesheet"  href="css/slide.css"  />
-	<link rel="stylesheet"  href="css/dropdown.css"  />
+    <title>Accueil </title>
+	<link href="css/template.css"  rel="stylesheet" type="text/css" >
+	<link href="css/accueil22.css" rel="stylesheet"   />
+    <link href="css/slide.css"     rel="stylesheet"   />
+	<link href="css/dropdown.css"  rel="stylesheet"    />
 
 	<script src="js/jquery.js"></script>
 </head>
 
-<body  >
+<body >
     <header>
 		<div class="en-tete">
-				<h1> Master Handi Cours de CMS </h1>
-				<h2> Un site utilisant WordPress </h2>
-		</div>
-		
+				<h1>Etat civil </h1>
+				<h2> PHP ( sans framwork ) </h2>
+		</div>		
 		<div class="menu topnav"  id="myTopnav"> 
 				<?php include("inc/accueil/accueil_menucentral.php"); ?> 
 		</div>
     </header>
-    <div class="contenu">
+    <div class="contenu" style="margin-bottom:0;">
 	    <form action ="" method="POST" name="form1" >
 			<!-- LE PANNEAU DE GAUCHE : Recher des document par numero ou nom -->
 			<div class="colonne_laterale" >
-				<aside style="padding:0;" >
-					<table class="tablegauche"  > 
+				<aside style="padding:0; " >
+					<table class="tablegauche" style="margin-bottom:0;"  > 
 					    <caption  style="caption-side:top; box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;  "> 
-						    <font color="gray" style="line-height:.5;">
+						    <font color="gray" style="line-height:2;">
 								 <h3> UNION DES COMORES  </h3>
 								 <h6> Unit&eacute;-Solidarit&eacute;-D&eacute;veloppement  </h6>
 								 <h4> MINISTERE DE L'INTERIEUR  </h4>
 							 </font>
-							 <img src="img/armoirie.png" style="z-index:3; padding-left:30%;  "  />
+							 <img src="img/armoirie.png" style="z-index:3; transform: translate(100%, 0);  "  />
 						 </caption>
 						 <tr> <td >RECHERCHE DE DOCUMENT</td></tr>
 						 <tr><td> <font color="#cdbe9f"><b>Search by</b></font> num&eacute;ro<br/> <input id="recherchenum" type="text" name="acte_" pattern=".{1,}"  > </td></tr> 
@@ -114,12 +112,11 @@ session_start();
 					<table  class="tabledroite" >
 			             <tr><td class="listemenu"> <?php include("inc/accueil/accueil_prefecture.php"); ?> </td></tr> 
 		            </table>
-					 
 				</aside>
 			</div>
 		</form>
     </div>     
-    <div class="footer">
+    <div class="footer" style="margin-top:0;">
         Pied de Page
     </div>
 </body>

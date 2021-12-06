@@ -1,6 +1,119 @@
+*
+{
+	margin: 0px; 
+	padding:0px;
+	
+}
 body{
     font-style: italic;
 	font-family: "Times New Roman", Georgia, Serif;
+}
+body  table tr td  div input
+{
+	border: 0px  #cf3fc3 dotted;
+	font-style: italic;
+	font-size: 15px;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:#00004d;
+}
+body  table tr td  input
+{
+	border: 0px  #cf3fc3 dotted; 
+			 
+	font-style: italic;
+	font-size: 15px;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:#000066;
+}
+.clean { clear:both; }
+.left { text-align:left; }
+label
+{
+	width:200px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+}
+table
+{
+	border-spacing:0px;
+	background:#ffffff;
+	
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding:0px;
+
+	width:100%;
+	margin:0;
+}
+tr
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin:0px;
+}
+td, th
+{
+	margin:0px;
+	border:0px;
+	/* padding:3px; */
+	text-align:center;
+}
+a  { text-align:right; text-decoration: none; }
+th
+{
+ color:white ;
+ background:green;	
+ border-radius:8px;
+ -webkit-border-radius:8px;
+ -moz-border-radius:8px;
+ box-shadow: 7px 6px 15px #333;
+
+}
+table.color_line tr:nth-child(2n+1) td {
+    color:Peru ;
+    background:silver;
+	 border-radius:8px;
+    -webkit-border-radius:8px;
+	-moz-border-radius:8px;
+}
+.color_line { position:absolute; z-index:2;  left:310px;  right:40px; top:114px;    height:490px; width:500px;   
+              overflow:  auto; 
+			  white-space:nowrap;
+			  display: block;  
+			}
+
+/*  Reduction hauteur table d'affichage resultat(lectureBD2.php)suite à une action sur le moteur de recherche de la page d'accueil*/
+.color_line_short { position:absolute; z-index:2;  left:310px;  right:40px; top:114px;    height:60px; width:523px;   
+              /* Pour limiter lataille du conteneur overflow:  auto; sinon il va s'adapter à la taille du contenu */ 
+			  background-color: #e5eecc;
+			  white-space:nowrap;
+			   
+			  box-shadow: 1px 1px 0px 0px green;
+			  -moz-box-shadow: 1px 1px 0px 0px green;
+			  -webkit-box-shadow: 1px 1px 0px 0px green;
+			
+			  /* Pour adapter  la taille de la table à son div conteneur i fo retirer   display: block; */ 
+}
+input ,select {
+   border-radius:4px;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   -khtml-border-radius:4px;
+   width:155px;
+   
+   	/*transform: rotate(-1deg);*/
+	/*box-shadow: 7px 6px 15px #333;  /* box-shadow: 7px 6px 15px #333;  */       
+    /*maxlength:100;*/
+}
+button      {
+	border-radius:4px;
+    -webkit-border-radius:4px;
+	-moz-border-radius:4px;
+   	/*transform: rotate(-1deg);*/
+	box-shadow: 1px #333; /*ct  7px 6px 15px #333;*/   /* box-shadow: 1px #333;  */     
 }
 
 
@@ -27,16 +140,55 @@ body{
 		/* Pour internet Explorer, un scroll bar s'invite dans le textarea, et donc je le ainsi:*/
 		overflow: hidden;
 }
+.rappel  { /* modifier_.php */
+         z-index:1;
+         position:absolute;
+		 bottom:10px;
+		 left:2px;
+	
+}
+.centrer
+{
+  position: absolute;
+    left: 400px; 
+    top:52px;
+	text-align:center;
+}
 
-.tablegauche{
-  position:relative; padding:5%; margin:0 ; border-radius:0; text-align:center;
+.tablegauche, .tablemenu{
+  position:relative; padding:5%; margin:0; border-radius:0; text-align:center; min-height:22.5em; 
   box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
 }
 /*acueil.php ? ecritureBD.php , ecritureBD.php */
 .tabledroite { 
-	position:relative; padding:5%; margin:0; border-radius:0; min-height:31.5em; 
+	position:relative; padding:5%; margin:0; border-radius:0; min-height:33.5em; 
 	box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47; 
 }
-.listemenu{ line-height: 1.8;  }
+
+.listemenu{ line-height: 1.8; }
+.nouveaudocument , .listdocument { display:block; float:left; margin-left:20px; }
+.nouveaudocument { border-bottom: outset 0px #e5eecc; }
+
+input#nouveaudocument , #listdocument  { background-color:#e5eecc; }
+
+input#nouveaudocument:hover , #listdocument:hover  { 
+            color:green ; 
+		    padding-top:1%; padding-bottom:1%; 
+			background-color: #cdbe7f;  position:relative; 
+            border-radius:2px;
+			-webkit-border-radius:2px;
+			-moz-border-radius:2px;
+			-khtml-border-radius:2px;
+			
+            box-shadow:
+                0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+                0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+} 
+
+
+div#commandePanel {height:30px;}
+
+
+  
 	
 	
