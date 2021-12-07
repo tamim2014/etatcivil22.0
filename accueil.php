@@ -75,8 +75,10 @@ session_start();
 <body >
     <header>
 		<div class="en-tete">
-				<h1>Etat civil </h1>
-				<h2> PHP ( sans framwork ) </h2>
+			<div class="hollowTop"   >				   
+			   <input type=image src="img/drapeau.png" align="left" class="flag" />
+			   <p class="text_header">OFFICE   <br> D'&Eacute;TAT CIVIL </p>			  
+			</div> 
 		</div>		
 		<div class="menu topnav"  id="myTopnav"> 
 				<?php include("inc/accueil/accueil_menucentral.php"); ?> 

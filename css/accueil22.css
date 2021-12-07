@@ -4,6 +4,7 @@
 	padding:0px;
 	
 }
+
 body{
     font-style: italic;
 	font-family: "Times New Roman", Georgia, Serif;
@@ -25,6 +26,28 @@ body  table tr td  input
 	font-family: "Times New Roman", Georgia, Serif;
 	color:#000066;
 }
+
+/* Contenu de l'entete */
+.hollowTop  { 
+	background: inherit;
+	position:relative;
+	width:95%; margin:auto;
+	height:6em;
+	padding:.25% 12% .25% .25%;
+	z-index:3; 
+	color:#ececea;
+	
+	border-radius:5px; 
+	box-shadow:
+	0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+	0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+	
+.flag { border-radius:5px 0px 0px 5px; }
+.text_header{ line-height:2; font-family:Amiri; font-size:1.5em; text-align:center; fon-weight:bold; }  
+		
+	 
+
 .clean { clear:both; }
 .left { text-align:left; }
 label
@@ -187,6 +210,24 @@ input#nouveaudocument:hover , #listdocument:hover  {
 
 
 div#commandePanel {height:30px;}
+
+
+.line1 {
+		background: inherit; /* #e5eecc;  #1D702D; */ 
+
+		border-radius:20px;
+		box-shadow:
+		0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+		0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+.line2 {
+background: inherit; /* #e5eecc;  #1D702D; */ 
+
+border-radius:20px;
+box-shadow:
+0px 2px 2px 0px rgba(0, 0, 0, 0.5),
+0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+}
 
 
   

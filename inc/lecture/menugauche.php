@@ -6,7 +6,7 @@
 				<p> &nbsp;</p>
 				<div class="kangalaheMenu">
 					<a href="#"><input id="flip2" class="teteMenuGauche" type="button" value="Liste par &Icirc;le" align="center"    /> </a>
-					<ul id="panel2" > 
+					<ul id="panel2"  > 
 					    <li>    <a href="#" class="island1" style="padding-left:30px; padding-right:30px;"  > Ngazidja  </a>   </li><hr>
 						<li>    <a href="#" class="island2" style="padding-left:37px; padding-right:37px;" > Moheli     </a>   </li><hr>
 						<li>    <a href="#" class="island3" style="padding-left:33.5px; padding-right:33.5px;" > Anjouan    </a>   </li>

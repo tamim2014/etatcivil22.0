@@ -58,8 +58,9 @@
 		     background-color: silver; /* no problem su le fond mais comme la police refuse de changer de couleur, je prefer ce fond que le vert % au color police imposé */
 			 border: solid 1px #c3c3c3;
 			 width:150px; 
-			 position:relative; left: 34px;
-
+			 position:relative; 
+			 /* left: 34px; */
+             margin-left: 10%;
 		    }
 		.panel3  { /* panel yahé sous-sous-menu de  à droite   - contient les préfectures Moroni-bambao ,Hambou, ...etc*/
 		     list-style:none; text-align:center;
@@ -68,7 +69,9 @@
 		     background-color: silver; /* no problem su le fond mais comme la police refuse de changer de couleur, je prefer ce fond que le vert % au color police imposé */
 			 border: solid 1px #c3c3c3;
 			 width:180px; /* ct  width:150px; mais HAMAHAMET-MBOIKOU ne rentrait pas */ 
-			 position:relative; left: 2px; Line-Height: 1.5;
+			 position:relative;  Line-Height: 1.5;
+			 /* left: 2px; */
+			 margin-left: .4%;
 		    }
            
         a.island1:hover , .island2:hover , .island3:hover  { /* Attention! pas d'ESPACE entre la class et les ":"  */
@@ -88,39 +91,40 @@
 		 
          /*PANEAU DE DROITE */ 
 		 /* pour lectureBD.php */
-		 .mnayvawo {  
-			 position:absolute; z-index:2;  left:513px;  right:40px; top:128px;    height:60px; width:543px;   /*   ct width:523px; */
+		 .mnayvawo { 
+		      position:relative;
+			  height:60px;
+			  width:100%;  margin:2% auto ; /* centrage horizontal du .mnayvawo*/
+			  padding:.55em; /* centrage vertical du contenu(.boutonyamnayivawo) */
+              			  			  
               /* Pour limiter lataille du conteneur overflow:  auto; sinon il va s'adapter à la taille du contenu */ 
 			  background-color: #e5eecc;
 			  white-space:nowrap;
-			   
+			  z-index:2; 
 			  box-shadow: 1px 1px 0px 0px green;
-			  border-radius:8px;
-			  -webkit-border-radius:8px; 
-              -moz-border-radius:8px;
-              -khtml-border-radius:8px;
-			  
-			}
-			 
-		
+			  border-radius:8px;			  
+			}		
 		 .boutoyahemnayivawo{
-			   background-color: #cdbe9f; height: 40px;   display: block;  margin : auto; text-align:center; padding-top: 5px; padding-bottom: 5px; margin: 9px auto 0px auto ;  width: 80%;
-			  -webkit-border-radius:6px; 
+			   background-color: #cdbe9f; 
+			   height: 40px;   
+			   display: block;  
+			   text-align:center;  padding-top: 5px; padding-bottom: 5px; font-size: 15px; font-style: italic; font-family: Times New Roman;  
+			   width: 80%; margin:auto ;  /* centrage horizontal */
+			   border-radius:6px;             			   
 			   box-shadow:
                           0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
                            0px 2px 2px 0px rgba(255, 255, 255, 0.5);
 		  }
-			
-		#yivawo  { /* ici le tableau des résultats */       
+		/* Le tableau des résultats */	
+		#yivawo  {  
+              position: relative;
+              height:380px; /* height:444px;*/
+			  /* top:52px; left:13px; height:444px; width:539px;  */
+              width:100%;  margin:2% auto ; /* centrage horizontal du .mnayvawo*/			  
 	          background-color: #e5eecc;
 	          overflow:  auto;  white-space:nowrap;  display: block; 
-			  position: relative; top:52px; left:5px; height:444px; width:539px; /*ct  left:13px */ /*   ct width:520px; */  
-			  box-shadow: 1px 1px 0px 0px green; 
-			  border-radius:10px;
-			  -webkit-border-radius:10px; 
-			  -moz-border-radius:10px;
-              -khtml-border-radius:10px;
-			  
+			  box-shadow: 1px 1px 0px 0px #cdbe9f;
+			  border-radius:10px;			  
          }
 		 
 		 /* Des couleurs alternées dans les lignes de la table: lectureBD.php*/
@@ -152,23 +156,18 @@
 		     font-size: 15px; font-style: italic; font-family: "Times New Roman", Georgia, Serif;  
         }
 		.sousmenu1 , .sousmenu2  , .sousmenu3   { 
-		      /*
-		      position:absolute;  left:310px;  right:40px; top:195px;    height:440px; width:520px;   
-              overflow:  auto; 
-			  white-space:nowrap;
-			  display: block; 
-			  magin horizontal= (largeurConteneur-largeurContenu - les paddingHorizontal)/2 = (520 -155)/2 = 182,5 environ 
-			  */
-			  position:absolute;  left:80px;      height:100%; width:100%; /*ct height:440px;  width:520px; // this line centers the div      */
-			  z-index:3; /* Thus, the sub-menu will be displayed above the table ( otherwise they would be invisible ) */
-			  white-space:nowrap; /* Because the prefecture HAMAHAMET- MBOIKOU takes 2 lines. This is the solution for it to fit into a single line */
-		      
+			 /*  position:absolute;  left:80px;      height:100%; width:100%; */
+			  position:absolute;  left:300px;     height:100%; width:100%;
+			  z-index:3; 
+			  white-space:nowrap; 
 			  font-size: 16px; font-style: italic; font-family: "Times New Roman", Georgia, Serif;  
 		}
 		/* REMARQUE: top:320px; =  bottom:-320px;  pour je ne sais quelle raison le top s'applique aux 3 sous-menu, mais pour bottom, i fo le faire séparement */
-		.sousmenu1{  bottom:-320px;}
-		.sousmenu2{  bottom:-450px;}
-		.sousmenu3{  bottom:-398px;}
+		.sousmenu1{  bottom:-70%; /* bottom:-320px; */  }
+		.sousmenu2{  bottom:-89%; /*  bottom:-593px; */ }
+		.sousmenu3{  bottom:-81%; /* bottom:-398px; */  }
+		
+
 
 		
 		
