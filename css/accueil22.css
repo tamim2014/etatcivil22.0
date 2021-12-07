@@ -164,10 +164,13 @@ button      {
 		overflow: hidden;
 }
 .rappel  { /* modifier_.php */
-         z-index:1;
-         position:absolute;
-		 bottom:10px;
-		 left:2px;
+
+		 position:relative;
+		 text-align:left;
+		 padding:1em;
+		 line-height:1.1;
+		 overflow:hidden;
+		 
 	
 }
 .centrer

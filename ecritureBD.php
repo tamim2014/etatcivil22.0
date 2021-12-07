@@ -42,11 +42,10 @@
             	</aside>
 			</div>
 
-			 <!-- LE PANNEAU DE DROITE devient le panneau centrale:  -->
+			 <!-- LE PANNEAU CENTRAL   -->
             <div class="colonne_contenu" style="padding:0; width: 40%;">
-			     <aside style="padding:0; background:#ececea;">
+			     <aside style="padding:1.5em 0 0 0; background:#ececea;">
 					<table class="tabledroite"  >
-					    <caption style="caption-side:top"> <font style="color:#ECECEA;"><h4> acte de naissance  </h4></caption>
 						<p class="showacte"> <!-- Pour afficher l'acte modifiÃ© dans la partie droite de la page modifie_.php  -->
 							<tr> 
 								 <td> <input type="text" name="naissance_jour_moi"  placeholder=" Le" > </td>
@@ -105,16 +104,16 @@
 			</div>
 			<!-- LE PANNEAU DE DROITE: -->
 			<div class="colonne_laterale" style="width: 25%; ">
-				<aside style="padding:0; background:inherit; padding-top:0;">			    
-		            <table  class="tablemenu" style="min-height:35.5em; padding-bottom:11em;" ><caption style="caption-side:top"> <font color="#ececea"><h4> Enregistrement  </h4></caption>     
+				<aside style="padding:1.5em 0 0 0; background:inherit; ">			    
+		            <table  class="tablemenu" style="min-height:35.5em; padding-bottom:5em;" >    
 						<tr><td>
-							<?php include("inc/ecriture/ecritureBD_menucentre.php"); ?>
+							<?php include("inc/ecriture/ecritureBD_menudroite.php"); ?>
 						</td></tr>
 					</table>
             	</aside>
 			</div>
 		</form>
-	</div>
+	</div><!-- div.contenu -->
     <div class="footer">
         Pied de Page
     </div>	

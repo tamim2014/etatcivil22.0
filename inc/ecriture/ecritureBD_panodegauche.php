@@ -8,10 +8,7 @@
 			<h4> MINISTERE DE L\'INTERIEUR  </h4>
 		</font>
 		<img src="img/armoirie.png"  style="z-index:3;   transform: translate(120%, 0); "  />
-	 </caption>
-	 
-
-	  
+	 </caption>	  
      <tr>
 	   <td> 
 	         Pr&eacute;fecture:  
@@ -54,8 +51,7 @@
 	 </tr>
 	 <tr>
 	     <td></td>
-		 <td><font color="##1D702D"> <b>Centre d\'Etat Civil:</b></font></td>
-		
+		 <td><font color="##1D702D"> <b>Centre d\'Etat Civil:</b></font></td>		
 	 </tr>
      <tr>
 	     <td>Centre</td> 
